@@ -289,7 +289,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     header: "",
     description: `Hvis vi dyrker på al jorden og bruger samme mængde gødning, skader vi havet. Havbunden begynder at lugte, og et “liglagen” kommer – Hvor hvide bakterier prøver at stoppe giftige stoffer. Det betyder, at livet i havet er i fare.`,
     sporgsmaal: ``,
-    choices: [{ text: "Få dit badge", nextState: 27 }],
+    choices: [{ text: "Få dit badge", nextState: 29 }],
     imgUrl: "./havet.jpg",
   },
 
