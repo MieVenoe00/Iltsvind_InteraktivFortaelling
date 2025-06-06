@@ -17,7 +17,7 @@ let newStory = [
     sporgsmaal: `Hvilken type gødning skal landmændene bruge?`,
     choices: [
       { text: "Organisk gødning  ", nextState: 2 },
-      { text: "NPK-gødning ", nextState: 88 },
+      { text: "NPK-gødning ", nextState: 16 },
     ],
     imgUrl: "./Intro2.jpg",
   },
@@ -39,7 +39,7 @@ Organisk gødning virker langsomt, så planterne når at optage næringen. <br> 
     sporgsmaal: `Hvad gør du for at beskytte havet? Vælg din strategi!`,
     choices: [
       { text: "Plant efterafgrøder", nextState: 4 },
-      { text: "Lad markerne stå nøgne", nextState: 88 },
+      { text: "Lad markerne stå nøgne", nextState: 8 },
     ],
     imgUrl: "./graes.jpg",
   },
@@ -60,9 +60,246 @@ Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyl
     description: `Vejrudsigten skifter hele tiden, og det kan ændre havets tilstand`,
     sporgsmaal: `Hvad tror du, er den bedste vejrudsigt for havets tilstand?`,
     choices: [
-      { text: "Der kommer kraftig blæst", nextState: 88 },
-      { text: "Ingen vind og 25 grader i ugevis", nextState: 88 },
+      { text: "Der kommer kraftig blæst", nextState: 6 },
+      { text: "Ingen vind og 25 grader i ugevis", nextState: 14 },
     ],
+    imgUrl: "./havet.jpg",
+  },
+
+  //6 Der kommer kraftig blæst = Resultat
+  {
+    header: "",
+    description: `Godt vejrvalg! Vinden blander vandet, så der kommer ilt helt ned på bunden.
+Ålegræs og dyr kan trives igen – naturen hjælper sig selv, når der ikke er for meget gødning i vejen.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit vinder badge", nextState: 7 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //7 Der kommer kraftig blæst = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Sådan du klarede det. Havmiljøet er i balance. <br> Du får BADGE: Gødnings-fighter`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //8 Nøgne marker resultat
+  {
+    header: "",
+    description: `Uden planter på marken løber gødningen direkte ud i vandet.
+Algerne vokser vildt, og dyreplankton kan ikke følge med.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste", nextState: 9 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //9 Nøgne marker spørgsmål
+  {
+    header: "",
+    description: `Når algerne dør og synker de til bunds. Her begynder bakterierne at gå i gang.`,
+    sporgsmaal: `Men hvad sker der egentlig, når bakterierne tager over?`,
+    choices: [
+      { text: "De spiser de døde alger", nextState: 10 },
+      { text: "Der sker ingenting", nextState: 12 },
+    ],
+    imgUrl: "./havet.jpg",
+  },
+
+  //10 De spiser de døde alger  resultat
+  {
+    header: "",
+    description: `Ilten forsvinder og livet flygter <br>
+Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til sidst er der næsten ingen ilt tilbage på havbunden. Krabber og muslinger flygter. Havet begynder at vise tegn på iltsvind.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 11 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //11 De spiser de døde alger resultat = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærte, hvor vigtigt efterafgrøder på markerne er for livet i havet. Iltsvind i sigte, men du forstod hvorfor. <br> Du får BADGE: Iltdetektiv`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //12 Der sker ingenting  resultat
+  {
+    header: "",
+    description: `Selvom det måske ikke kan ses, sker der faktisk meget på havbunden. <br>
+     Hvis der ikke er nok bakterier til at fjerne de døde algerne, så hober det op. Ålegræs bliver kvalt, og giftige stoffer kan opstå, hvilket gør livet svært for mange dyr og planter.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 13 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //13 Der sker ingenting = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærer, hvor vigtigt havets små rengøringshold er. <br> Du får BADGE: "Havets Vogter"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //14 Ingen vind og 25 grader i ugevis  resultat
+  {
+    header: "",
+    description: `Havet ligger stille. Det varme vejr får algerne til at vokse, og uden vind bliver vandet ikke blandet. Det betyder, at der mangler ilt nede ved bunden. Heldigvis har du ikke overgødet – så ålegræsset klarer det meste… men det er på grænsen.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 15 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //15 Ingen vind og 25 grader i ugevis = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærer at selv vejret påvirker havet, men selv med stille vand holdte du balancen. <br> Du får BADGE: "Redder på kanten"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //16 NPK gødning Resultat
+  {
+    header: "",
+    description: `Planterne vokser hurtigt – men det gør algerne også! <br>
+NPK-gødning virker med det samme, men der er for meget næring. En stor del ryger ud i vandløbene og videre til havet.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste ", nextState: 17 }],
+    imgUrl: "./graes.jpg",
+  },
+
+  //17 NPK gødning spørgsmål
+  {
+    header: "",
+    description: `Med al den næring i havet begynder algerne at vokse som vilde. Vandet bliver grønt og uklart – og havets balance bliver forstyrret`,
+    sporgsmaal: `Men hvad sker der egentlig med algerne i havet?`,
+    choices: [
+      { text: "Dyreplankton spiser dem", nextState: 18 },
+      { text: "De dør og synker til bunds", nextState: 24 },
+    ],
+    imgUrl: "./havet.jpg",
+  },
+
+  //18 Dyreplankton spiser dem Resultat
+  {
+    header: "",
+    description: `Dyreplankton spiser alger – men de kan ikke spise uendeligt. Når der kommer for mange alger, ender det med, at en stor del af dem dør og falder til bunds – og det er der problemet starter`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste ", nextState: 19 }],
+    imgUrl: "./graes.jpg",
+  },
+
+  //19 Dyreplankton spiser dem spørgsmål
+  {
+    header: "",
+    description: `Ud over landbruget kommer der også næringsstoffer fra spildevand. <br>
+Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af vandet kun delvist renset – og ender i havet.`,
+    sporgsmaal: `Skal vi bygge større renseanlæg, så mere vand bliver renset?`,
+    choices: [
+      { text: "Ja! Det ville hjælpe", nextState: 20 },
+      { text: "Nej, det er for dyrt", nextState: 22 },
+    ],
+    imgUrl: "./havet.jpg",
+  },
+
+  //20 Ja! Det ville hjælpe  resultat
+  {
+    header: "",
+    description: `Større renseanlæg hjælper med at fjerne noget af den skadelige kvælstof, så mindre ender i havet. Det gør en forskel, men det løser ikke alt, især hvis landbruget stadig udleder meget.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 21 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //21 Ja! Det ville hjælpe = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du gjorde en indsats, men det er svært at forbedre havet, når landbruget udleder for meget næring. <br> Du får BADGE: "Miljøforkæmperen"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //22 Nej, det er for dyrt resultat
+  {
+    header: "",
+    description: `Algerne vokser vildt, og iltsvind spreder sig. Bunddyrene dør, og fiskene flygter. Når vi ikke gør noget, bruger algerne al ilten i havet, og livet forsvinder. Det bliver en grå og tom zone under vandet.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 23 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //23 Nej, det er for dyrt = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærer, at selvom du prøver at hjælpe ved at lade dyreplankton spise algerne, kan det være svært at redde havet uden at mindske næringsstofferne fra landbruget.
+ <br> Du får BADGE: "Miljøvækker"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //24 De dør og synker til bunds Resultat
+  {
+    header: "",
+    description: `Når døde alger falder til bunds, skal de nedbrydes af bakterier. Men det kræver ilt – og hvis der er alt for mange alger, bliver der brugt alt for meget ilt. Til sidst er der ikke noget tilbage og der opstår iltsvind`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste ", nextState: 25 }],
+    imgUrl: "./graes.jpg",
+  },
+
+  //25 De dør og synker til bunds spørgsmål
+  {
+    header: "",
+    description: `Landbruget udleder 60% af alle næringsstoffer, der kommer i havet. `,
+    sporgsmaal: `Ville det hjælpe at fjerne noget af landbrugsarealet?`,
+    choices: [
+      { text: "Ja, mere plads til natur", nextState: 26 },
+      { text: "Nej, vi skal bruge al jorden", nextState: 28 },
+    ],
+    imgUrl: "./havet.jpg",
+  },
+
+  //26 Ja, mere plads til natur resultat
+  {
+    header: "",
+    description: `Hvis vi bruger mindre af landet til marker og mere til skov og natur, så udleder vi mindre kvælstof til havet. Det giver havmiljøet en pause – og så kan det begynde at hele sig selv igen.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 27 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //27 Ja, mere plads til natur = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærer hvordan en god udvikling starter.
+ <br> Du får BADGE: "Fremtidens Fisker"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //28 Nej, vi skal bruge al jorden resultat
+  {
+    header: "",
+    description: `Hvis vi dyrker på al jorden og bruger samme mængde gødning, skader vi havet. Havbunden begynder at lugte, og et “liglagen” kommer – Hvor hvide bakterier prøver at stoppe giftige stoffer. Det betyder, at livet i havet er i fare.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Få dit badge", nextState: 27 }],
+    imgUrl: "./havet.jpg",
+  },
+
+  //29 Nej, vi skal bruge al jorden = Vinder badge
+  {
+    header: "",
+    description: ``,
+    sporgsmaal: `Du lærer, hvad der sker, når vi ikke passer på jorden og havet.
+ <br> Du får BADGE: "Havets Alarm"`,
+    choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./havet.jpg",
   },
 ];
