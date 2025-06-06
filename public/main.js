@@ -3,7 +3,7 @@ import "../src/style.css";
 let newStory = [
   // 0
   {
-    header: "Kanoturen",
+    header: "",
     description: "",
     choices: [{ text: "Start spillet ", nextState: 1 }],
     imgUrl: "./Intro.jpg",
@@ -11,13 +11,14 @@ let newStory = [
 
   //1
   {
-    header: "Styremesteren",
-    description: `Du er nu dagens styrmand, og det går jo forrygende i starten, men efter lidt tid opdager du den første forhindring, forud skal du tage beslutning om I et; skal sejle gennem en klase åkander, hvor I risikere at sidde fast, eller to; sejle inde ved vandkanten, hvor I risikere at støde på grund.`,
+    header: "",
+    description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og deres valg kan have store konsekvenser for havets tilstand. <br><br>
+  <b>Hvilken type gødning skal landmændene bruge? <b/>`,
     choices: [
-      { text: "Åkanderne  ", nextState: 3 },
-      { text: "Ved vandkanten ", nextState: 4 },
+      { text: "Organisk gødning  ", nextState: 3 },
+      { text: "NPK-gødning ", nextState: 4 },
     ],
-    imgUrl: "./images/pic3.png",
+    imgUrl: "./Intro2.jpg",
   },
 
   //2

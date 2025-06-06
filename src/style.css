@@ -3,6 +3,8 @@
  @import url("https://use.typekit.net/gos2pub.css");
  @import url("https://use.typekit.net/gos2pub.css");
 
+ 
+
  :root {
     --lysgroen: #F0F4F0;
     --mellemgroen: #DFE3DC;
@@ -54,7 +56,9 @@ main{
 
 .rubrikTekst{
     display: flex;
+    margin-top: 0.5rem;
     width: 100%;
+    height: 11rem;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -66,10 +70,10 @@ main{
      font-family: "shantell-sans-variable", sans-serif;
      font-weight: 400;
      text-align: center;
-     width: 42%;
+     width: 40%;
      
      
-     
+     margin: 0;
      font-size: 2rem;
      line-height: 1.05;
 
