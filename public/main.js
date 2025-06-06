@@ -5,6 +5,7 @@ let newStory = [
   {
     header: "",
     description: "",
+    sporgsmaal: "",
     choices: [{ text: "Start spillet ", nextState: 1 }],
     imgUrl: "./Intro.jpg",
   },
@@ -12,8 +13,8 @@ let newStory = [
   //1
   {
     header: "",
-    description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og deres valg kan have store konsekvenser for havets tilstand. <br><br>
-  <b>Hvilken type gødning skal landmændene bruge? <b/>`,
+    description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og deres valg kan have store konsekvenser for havets tilstand.`,
+    sporgsmaal: `Hvilken type gødning skal landmændene bruge?`,
     choices: [
       { text: "Organisk gødning  ", nextState: 3 },
       { text: "NPK-gødning ", nextState: 4 },
@@ -36,6 +37,7 @@ let newStory = [
 // Hooks til HTML DOM
 const headerEl = document.querySelector("header h1");
 const textEl = document.querySelector("#text p");
+const questionEl = document.querySelector("#sporgsmaal");
 const optionsEl = document.querySelector("#options");
 const imgEl = document.querySelector("#storyImg");
 
@@ -52,6 +54,7 @@ function showText(stateID) {
   //console.log(newStory[stateID].description)
   headerEl.textContent = newStory[stateID].header;
   textEl.innerHTML = newStory[stateID].description;
+  questionEl.innerHTML = newStory[stateID].sporgsmaal;
 }
 
 function showImage(stateID) {
