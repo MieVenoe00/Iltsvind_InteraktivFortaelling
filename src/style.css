@@ -1,0 +1,190 @@
+ @import url("https://use.typekit.net/gos2pub.css");
+ @import url("https://use.typekit.net/gos2pub.css");
+ @import url("https://use.typekit.net/gos2pub.css");
+ @import url("https://use.typekit.net/gos2pub.css");
+
+ :root {
+    --lysgroen: #F0F4F0;
+    --mellemgroen: #DFE3DC;
+    --groen: #293C1F;
+
+     
+ }
+
+ body {
+     margin: 0;
+    background-color: var(--lysgroen);
+     /* cursor: url('images/musblad-03.svg'), auto; */
+ }
+
+
+ h1 {
+     font-family: "permanent-marker", sans-serif;
+     font-style: normal;
+     display: flex;
+     text-align: center;
+     font-weight: 800;
+
+     width: 90vw;
+     margin-left: 5vw;
+     font-size: 5vw;
+     color: rgb(70, 25, 0);
+
+     top: 0;
+     margin-top: 0vw;
+     padding-top: 1vw;
+
+     /* background-color: rgba(245, 235, 219, 0.717);
+  padding: 1vw 2vw;
+  border-radius: 30px; */
+
+     justify-content: center;
+
+     position: absolute;
+
+ }
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.rubrikTekst{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 20;
+}
+
+ #ptekst {
+     
+     font-family: "shantell-sans-variable", sans-serif;
+     font-weight: 400;
+     text-align: center;
+     width: 42%;
+     
+     
+     
+     font-size: 2rem;
+     line-height: 1.05;
+
+     /* background-color: rgba(245, 235, 219, 0.51); */
+     
+     
+ }
+
+.billedeWrapper{
+    display: flex;
+    flex-direction: column;
+        width: 90rem;
+        align-items: center;
+    
+
+}
+
+#ramme{
+    z-index: 3;
+    position: absolute;
+    width: 90rem;
+}
+
+ #storyImg {
+     position: relative;
+     z-index: -1;
+     padding-top: 9.5rem;
+     width: 83rem;
+ }
+
+
+ .knapper {
+     display: inline-block;
+     width: 100%;
+     margin-top: -4rem;;
+     gap: 3rem;
+     justify-content: space-evenly;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+     position: absolute;
+     z-index: 20;
+ }
+
+ .btnvalg , .btnvalg2 {
+     /* position: absolute; */
+     display: inline-block;
+     justify-content: center;
+     margin-top: 0rem;
+     align-items: center;
+
+
+     cursor: pointer;
+     gap: 2rem;
+     justify-content: space-evenly;
+     display: flex;
+     justify-content: center;
+
+
+
+
+ }
+
+ .btnvalg img,  .btnvalg2 img {
+     /* position: absolute; */
+     position: relative;
+     z-index: 1;
+     width: 30rem;
+     height: auto;
+     /* border: 1px solid green; */
+ }
+
+
+
+ #h2tekst {
+     /* position: relative; */
+     position: absolute;
+     margin: 0;
+     /* top: 0; */
+     
+     max-width: 28rem;
+
+     vertical-align: middle;
+     text-align: center;
+     z-index: 10;
+
+     color: rgb(77, 37, 0);
+
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 600;
+     font-size: 3rem;
+ }
+
+
+ .btn-color {
+     /* position: relative; */
+     position: absolute;
+     margin: 0;
+     top: 0;
+     margin-top: 0vw;
+    max-width: 28rem;
+
+     vertical-align: middle;
+     text-align: center;
+     z-index: 10;
+
+     color: rgb(77, 37, 0);
+
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 600;
+    font-size: 4rem;
+ }
+
+
+
+ .btnvalg:hover {
+     cursor: pointer;
+ }

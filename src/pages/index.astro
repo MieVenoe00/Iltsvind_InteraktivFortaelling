@@ -1,0 +1,53 @@
+---
+import "../style.css";
+// import { script } from ".main/js";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <script type="module" src="/main.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Iltsvind Interaktiv Fortælling</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <header>
+      <h1>Iltsvind</h1>
+    </header>
+    <main>
+      <div class="rubrikTekst" id="text">
+        <p id="ptekst">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries.
+        </p>
+      </div>
+      <div class="billedeWrapper" id="billedebaggrund">
+        <img id="ramme" src="./ramme.svg" alt="" />
+        <img id="storyImg" src="./Intro.jpg" alt="" />
+      </div>
+    </main>
+
+    <section class="knapper" id="options">
+      <div class="btnvalg">
+        <img src="/knap1.svg" id="imgskilt" alt="skilt" />
+
+        <h2 id="h2tekst">Valgmulighed 1</h2>
+      </div>
+
+      <div class="btnvalg2">
+        <img src="/knap2.svg" id="imgskilt" alt="skilt" />
+
+        <h2 id="h2tekst">Valgmulighed 2</h2>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
