@@ -1,7 +1,7 @@
 import "../src/style.css";
 
 let newStory = [
-  // 0
+  // 0 Intro
   {
     header: "",
     description: "",
@@ -10,27 +10,60 @@ let newStory = [
     imgUrl: "./Intro.jpg",
   },
 
-  //1
+  //1 Intro bondegården
   {
     header: "",
     description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og deres valg kan have store konsekvenser for havets tilstand.`,
     sporgsmaal: `Hvilken type gødning skal landmændene bruge?`,
     choices: [
-      { text: "Organisk gødning  ", nextState: 3 },
-      { text: "NPK-gødning ", nextState: 4 },
+      { text: "Organisk gødning  ", nextState: 2 },
+      { text: "NPK-gødning ", nextState: 88 },
     ],
     imgUrl: "./Intro2.jpg",
   },
 
-  //2
+  //2 Organisk gødning Resultat
   {
-    header: "Rugbrødsmotoren",
-    description: `Du er nu dagens rugbrødsmotor. Du finder hurtigt ud af hvor hårdt det er og vil gerne skifte med din bedste ven. Du tænker ikke det bliver noget problem og I skifter i kanoen ude på vandet (1). I gider ikke tage nogen chancer og I roer ind til bredden hvor I skifter (2).`,
+    header: "",
+    description: `Godt valgt! <br>
+Organisk gødning virker langsomt, så planterne når at optage næringen. <br> Det betyder, at der ikke skylles så meget kvælstof ud i havet – og derfor vokser algerne ikke vildt. Det er godt nyt for livet under overfladen!`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste ", nextState: 3 }],
+    imgUrl: "./graes.jpg",
+  },
+
+  //3 Organisk gødning Spørgsmål
+  {
+    header: "",
+    description: `Efteråret er på vej! Og der er stadig næringsstoffer i jorden, som kan blive skyllet ud i vandløb og ende i havet. Det kan give problemer for havmiljøet.`,
+    sporgsmaal: `Hvad gør du for at beskytte havet? Vælg din strategi!`,
     choices: [
-      { text: "Skift ude på vandet   ", nextState: 5 },
-      { text: "Skift ved bredden  ", nextState: 6 },
+      { text: "Plant efterafgrøder", nextState: 4 },
+      { text: "Lad markerne stå nøgne", nextState: 88 },
     ],
-    imgUrl: "./images/pic3.png",
+    imgUrl: "./graes.jpg",
+  },
+
+  //4 Plant efterafgrøder Resultat
+  {
+    header: "",
+    description: `Godt valg! Efterafgrøder fungere som en grøn støvsuger. <br>
+Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyller det ud i vandet. Det beskytter havet og giver mere ilt til fisk og planter.`,
+    sporgsmaal: ``,
+    choices: [{ text: "Næste", nextState: 5 }],
+    imgUrl: "./graes.jpg",
+  },
+
+  //5 Plant efterafgrøder spørgsmål
+  {
+    header: "",
+    description: `Vejrudsigten skifter hele tiden, og det kan ændre havets tilstand`,
+    sporgsmaal: `Hvad tror du, er den bedste vejrudsigt for havets tilstand?`,
+    choices: [
+      { text: "Der kommer kraftig blæst", nextState: 88 },
+      { text: "Ingen vind og 25 grader i ugevis", nextState: 88 },
+    ],
+    imgUrl: "./havet.jpg",
   },
 ];
 
