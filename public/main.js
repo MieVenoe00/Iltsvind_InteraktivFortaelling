@@ -19,7 +19,7 @@ let newStory = [
       { text: "Organisk gødning  ", nextState: 2 },
       { text: "NPK-gødning ", nextState: 16 },
     ],
-    imgUrl: "./Intro2.jpg",
+    imgUrl: "./scene1.JPG",
   },
 
   //2 Organisk gødning Resultat
@@ -29,7 +29,7 @@ let newStory = [
 Organisk gødning virker langsomt, så planterne når at optage næringen. <br> Det betyder, at der ikke skylles så meget kvælstof ud i havet – og derfor vokser algerne ikke vildt. Det er godt nyt for livet under overfladen!`,
     sporgsmaal: ``,
     choices: [{ text: "Næste ", nextState: 3 }],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./scene2.jpg",
   },
 
   //3 Organisk gødning Spørgsmål
@@ -41,7 +41,7 @@ Organisk gødning virker langsomt, så planterne når at optage næringen. <br> 
       { text: "Plant efterafgrøder", nextState: 4 },
       { text: "Lad markerne stå nøgne", nextState: 8 },
     ],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./scene3.jpg",
   },
 
   //4 Plant efterafgrøder Resultat
@@ -51,7 +51,7 @@ Organisk gødning virker langsomt, så planterne når at optage næringen. <br> 
 Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyller det ud i vandet. Det beskytter havet og giver mere ilt til fisk og planter.`,
     sporgsmaal: ``,
     choices: [{ text: "Næste", nextState: 5 }],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./scene4.jpg",
   },
 
   //5 Plant efterafgrøder spørgsmål
@@ -63,7 +63,7 @@ Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyl
       { text: "Der kommer kraftig blæst", nextState: 6 },
       { text: "Ingen vind og 25 grader i ugevis", nextState: 14 },
     ],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene5c.jpg",
   },
 
   //6 Der kommer kraftig blæst = Resultat
@@ -73,7 +73,7 @@ Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyl
 Ålegræs og dyr kan trives igen – naturen hjælper sig selv, når der ikke er for meget gødning i vejen.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit vinder badge", nextState: 7 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene6.jpg",
   },
 
   //7 Der kommer kraftig blæst = Vinder badge
@@ -92,7 +92,7 @@ Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyl
 Algerne vokser vildt, og dyreplankton kan ikke følge med.`,
     sporgsmaal: ``,
     choices: [{ text: "Næste", nextState: 9 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene8.jpg",
   },
 
   //9 Nøgne marker spørgsmål
@@ -104,17 +104,17 @@ Algerne vokser vildt, og dyreplankton kan ikke følge med.`,
       { text: "De spiser de døde alger", nextState: 10 },
       { text: "Der sker ingenting", nextState: 12 },
     ],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene9.jpg",
   },
 
   //10 De spiser de døde alger  resultat
   {
     header: "",
-    description: `Ilten forsvinder og livet flygter <br>
+    description: `
 Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til sidst er der næsten ingen ilt tilbage på havbunden. Krabber og muslinger flygter. Havet begynder at vise tegn på iltsvind.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit badge", nextState: 11 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./Scene10.jpg",
   },
 
   //11 De spiser de døde alger resultat = Vinder badge
@@ -133,7 +133,7 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
      Hvis der ikke er nok bakterier til at fjerne de døde algerne, så hober det op. Ålegræs bliver kvalt, og giftige stoffer kan opstå, hvilket gør livet svært for mange dyr og planter.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit badge", nextState: 13 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene12.jpg",
   },
 
   //13 Der sker ingenting = Vinder badge
@@ -151,7 +151,7 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
     description: `Havet ligger stille. Det varme vejr får algerne til at vokse, og uden vind bliver vandet ikke blandet. Det betyder, at der mangler ilt nede ved bunden. Heldigvis har du ikke overgødet – så ålegræsset klarer det meste… men det er på grænsen.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit badge", nextState: 15 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene14.jpg",
   },
 
   //15 Ingen vind og 25 grader i ugevis = Vinder badge
@@ -170,7 +170,7 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
 NPK-gødning virker med det samme, men der er for meget næring. En stor del ryger ud i vandløbene og videre til havet.`,
     sporgsmaal: ``,
     choices: [{ text: "Næste ", nextState: 17 }],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./scene16c.jpg",
   },
 
   //17 NPK gødning spørgsmål
@@ -182,7 +182,7 @@ NPK-gødning virker med det samme, men der er for meget næring. En stor del ryg
       { text: "Dyreplankton spiser dem", nextState: 18 },
       { text: "De dør og synker til bunds", nextState: 24 },
     ],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene17.jpg",
   },
 
   //18 Dyreplankton spiser dem Resultat
@@ -191,7 +191,7 @@ NPK-gødning virker med det samme, men der er for meget næring. En stor del ryg
     description: `Dyreplankton spiser alger – men de kan ikke spise uendeligt. Når der kommer for mange alger, ender det med, at en stor del af dem dør og falder til bunds – og det er der problemet starter`,
     sporgsmaal: ``,
     choices: [{ text: "Næste ", nextState: 19 }],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./scene18.jpg",
   },
 
   //19 Dyreplankton spiser dem spørgsmål
@@ -250,7 +250,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     description: `Når døde alger falder til bunds, skal de nedbrydes af bakterier. Men det kræver ilt – og hvis der er alt for mange alger, bliver der brugt alt for meget ilt. Til sidst er der ikke noget tilbage og der opstår iltsvind`,
     sporgsmaal: ``,
     choices: [{ text: "Næste ", nextState: 25 }],
-    imgUrl: "./graes.jpg",
+    imgUrl: "./Scene24.jpg",
   },
 
   //25 De dør og synker til bunds spørgsmål
