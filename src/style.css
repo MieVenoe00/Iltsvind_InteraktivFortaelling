@@ -20,16 +20,16 @@
 
  @font-face {
     font-family: ItalienPlateLight;
-        src: url(public/Font/ITPLight.TTF) format("truetype");}
+        src: url(/Font/ITPLight.TTF) format("truetype");}
  @font-face {
     font-family: ItalienPlateMedium;
-        src: url(public/Font/ITPMedium.TTF) format("truetype"); }
+        src: url(/Font/ITPMedium.TTF) format("truetype"); }
  @font-face {
      font-family: ItalienPlateRegular;
-        src: url(public/Font/ITPRegular.TTF) format("truetype");}
+        src: url(/Font/ITPRegular.TTF) format("truetype");}
  @font-face {
     font-family: ItalienPlateBold;
-        src: url(public/Font/ITPBold.TTF) format("truetype");}
+        src: url(/Font/ITPBold.TTF) format("truetype");}
     
 
 
