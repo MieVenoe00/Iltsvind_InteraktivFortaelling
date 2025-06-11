@@ -446,7 +446,24 @@ function isAstroComponentInstance(obj) {
   return typeof obj === "object" && obj !== null && !!obj[astroComponentInstanceSym];
 }
 
+async function renderScript(result, id) {
+  if (result._metadata.renderedScripts.has(id)) return;
+  result._metadata.renderedScripts.add(id);
+  const inlined = result.inlinedScripts.get(id);
+  if (inlined != null) {
+    if (inlined) {
+      return markHTMLString(`<script type="module">${inlined}</script>`);
+    } else {
+      return "";
+    }
+  }
+  const resolved = await result.resolve(id);
+  return markHTMLString(
+    `<script type="module" src="${result.userAssetsBase ? (result.base === "/" ? "" : result.base) + result.userAssetsBase : ""}${resolved}"></script>`
+  );
+}
+
 "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 "-0123456789_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 
-export { NOOP_MIDDLEWARE_HEADER as N, createAstro as a, renderHead as b, createComponent as c, addAttribute as d, decodeKey as e, renderTemplate as r };
+export { NOOP_MIDDLEWARE_HEADER as N, createAstro as a, addAttribute as b, createComponent as c, renderScript as d, renderTemplate as e, decodeKey as f, renderHead as r };
