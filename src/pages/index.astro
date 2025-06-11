@@ -1,6 +1,5 @@
 ---
 import "../style.css";
-// import { script } from ".main/js";
 ---
 
 <html lang="en">
@@ -8,8 +7,10 @@ import "../style.css";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module">
+      import init from "../scripts/main.js";
+      init(); // Kun hvis du eksporterer en funktion
+    </script>
 
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
@@ -50,6 +51,6 @@ import "../style.css";
         <h2 id="h2tekst">Valgmulighed 2</h2>
       </div>
     </section>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
   </body>
 </html>

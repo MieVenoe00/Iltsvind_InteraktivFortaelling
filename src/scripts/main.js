@@ -1,5 +1,7 @@
 import "../src/style.css";
 
+console.log("JavaScript virker!");
+
 let newStory = [
   // 0 Intro
   {
