@@ -3,11 +3,11 @@ import "../src/style.css";
 let newStory = [
   // 0 Intro
   {
-    header: "",
+    header: "Havets Hemmelighed",
     description: "",
     sporgsmaal: "",
     choices: [{ text: "Start spillet ", nextState: 1 }],
-    imgUrl: "./Intro.jpg",
+    imgUrl: "./Intro5.jpg",
   },
 
   //1 Intro bondegården
@@ -80,7 +80,7 @@ Efterafgrødernes lange rødder suger overskydende gødning op, før regnen skyl
   {
     header: "",
     description: ``,
-    sporgsmaal: `Sådan du klarede det. Havmiljøet er i balance. <br> Du får BADGE: Havets Konge`,
+    sporgsmaal: `Sådan du klarede det. Havmiljøet er i balance. <br> Du får badge: Havets Konge`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./scene7B.jpg",
   },
@@ -121,9 +121,9 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
   {
     header: "",
     description: ``,
-    sporgsmaal: `Du lærte, hvor vigtigt efterafgrøder på markerne er for livet i havet. Iltsvind i sigte, men du forstod hvorfor. <br> Du får BADGE: Iltdetektiv`,
+    sporgsmaal: `Du lærte, hvor vigtigt efterafgrøder på markerne er for livet i havet. Iltsvind i sigte, men du forstod hvorfor. <br> Du får badge: Iltdetektiv`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
-    imgUrl: "./scene11B.jpg",
+    imgUrl: "./Scene11B.jpg",
   },
 
   //12 Der sker ingenting  resultat
@@ -140,7 +140,7 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
   {
     header: "",
     description: ``,
-    sporgsmaal: `Du lærer, hvor vigtigt havets små rengøringshold er. <br> Du får BADGE: Kystvagt i Lære`,
+    sporgsmaal: `Du lærer, hvor vigtigt havets små rengøringshold er. <br> Du får badge: Kystvagt i Lære`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./scene13B.jpg",
   },
@@ -158,7 +158,7 @@ Bakterierne spiser de mange døde alger, men de bruger også en masse ilt. Til s
   {
     header: "",
     description: ``,
-    sporgsmaal: `Du lærer at selv vejret påvirker havet, men selv med stille vand holdte du havet i balance. <br> Du får BADGE: Havhelt`,
+    sporgsmaal: `Du lærer at selv vejret påvirker havet, men selv med stille vand holdte du havet i balance. <br> Du får badge: Havhelt`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./scene15B.jpg",
   },
@@ -197,8 +197,7 @@ NPK-gødning virker med det samme, men der er for meget næring. En stor del ryg
   //19 Dyreplankton spiser dem spørgsmål
   {
     header: "",
-    description: `Ud over landbruget kommer der også næringsstoffer fra spildevand. <br>
-Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af vandet kun delvist renset – og ender i havet.`,
+    description: `Ud over landbruget kommer der også næring fra spildevand. Når det regner meget, kan renseanlæg blive overfyldte, og urenset vand ryger i havet.`,
     sporgsmaal: `Skal vi bygge større renseanlæg, så mere vand bliver renset?`,
     choices: [
       { text: "Ja! Det ville hjælpe", nextState: 20 },
@@ -220,7 +219,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
   {
     header: "",
     description: ``,
-    sporgsmaal: `Du gjorde en indsats ved at forbedre vores renseanlæg, men det er svært at forbedre havet, når landbruget udleder for meget næring. <br> Du får BADGE: Den Lille Rensehelt`,
+    sporgsmaal: `Du gjorde en indsats ved at forbedre vores renseanlæg, men det er svært at forbedre havet, når landbruget udleder for meget næring. <br> Du får badge: Den Lille Rensehelt`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./scene21B.jpg",
   },
@@ -234,12 +233,12 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     imgUrl: "./scene22.jpg",
   },
 
-  //23 Nej, det er for dyrt = Vinder badge
+  //23 Nej, det er for dyrt =  badge
   {
     header: "",
     description: ``,
-    sporgsmaal: `Du lærer, at selvom du prøver at hjælpe ved at lade dyreplankton spise algerne, kan det være svært at redde havet uden at mindske næringsstofferne fra landbruget.
- <br> Du får BADGE: Miljø Skurk`,
+    sporgsmaal: `Du lærer, at dyreplankton ikke kan klare det hele, hvis der stadig kommer for meget næring fra landbruget.
+ <br> Du får badge: Havets Skurk`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
     imgUrl: "./scene23B.jpg",
   },
@@ -262,7 +261,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
       { text: "Ja, mere plads til natur", nextState: 26 },
       { text: "Nej, vi skal bruge al jorden", nextState: 28 },
     ],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene16c.jpg",
   },
 
   //26 Ja, mere plads til natur resultat
@@ -271,7 +270,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     description: `Hvis vi bruger mindre af landet til marker og mere til skov og natur, så udleder vi mindre kvælstof til havet. Det giver havmiljøet en pause – og så kan det begynde at hele sig selv igen.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit badge", nextState: 27 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene26.jpg",
   },
 
   //27 Ja, mere plads til natur = Vinder badge
@@ -279,9 +278,9 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     header: "",
     description: ``,
     sporgsmaal: `Du gjorde en indsats ved at reducere landbrugsarealet, men det er svært at forbedre havet, når landbruget udleder for meget næring.
- <br> Du får BADGE: Halv Miljøhelt`,
+ <br> Du får badge: Halv Miljøhelt`,
     choices: [{ text: "Prøv igen", nextState: 0 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene27B.jpg",
   },
 
   //28 Nej, vi skal bruge al jorden resultat
@@ -290,7 +289,7 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     description: `Hvis vi dyrker på al jorden og bruger samme mængde gødning, skader vi havet. Havbunden begynder at lugte, og et “liglagen” kommer – Hvor hvide bakterier prøver at stoppe giftige stoffer. Det betyder, at livet i havet er i fare.`,
     sporgsmaal: ``,
     choices: [{ text: "Få dit badge", nextState: 29 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene28.jpg",
   },
 
   //29 Nej, vi skal bruge al jorden = Vinder badge
@@ -298,9 +297,9 @@ Når det regner meget, kan renseanlæggene blive overfyldte. Så bliver noget af
     header: "",
     description: ``,
     sporgsmaal: `Du lærer, hvad der sker, når vi ikke passer på jorden og havet.
- <br> Du får BADGE: Danger Zone `,
+ <br> Du får badge: Danger Zone `,
     choices: [{ text: "Prøv igen", nextState: 0 }],
-    imgUrl: "./havet.jpg",
+    imgUrl: "./scene29B.jpg",
   },
 ];
 
