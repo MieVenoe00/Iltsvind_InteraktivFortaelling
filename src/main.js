@@ -8,14 +8,14 @@ let newStory = [
     header: "Havets Hemmelighed",
     description: "",
     sporgsmaal: "",
-    choices: [{ text: "Start spillet ", nextState: 1 }],
+    choices: [{ text: "Start", nextState: 1 }],
     imgUrl: "./Intro5.jpg",
   },
 
   //1 Intro bondegården
   {
     header: "",
-    description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og deres valg kan have store konsekvenser for havets tilstand.`,
+    description: `Selvom man ikke skulle tro det, så kan landbruget påvirke havet og landmandens valg kan have store konsekvenser for havets tilstand.`,
     sporgsmaal: `Hvilken type gødning skal landmændene bruge?`,
     choices: [
       { text: "Organisk gødning  ", nextState: 2 },
@@ -100,7 +100,7 @@ Algerne vokser vildt, og dyreplankton kan ikke følge med.`,
   //9 Nøgne marker spørgsmål
   {
     header: "",
-    description: `Når algerne dør og synker de til bunds. Her begynder bakterierne at gå i gang.`,
+    description: `Når algerne dør, så synker de til bunds. Her begynder bakterierne at gå i gang.`,
     sporgsmaal: `Men hvad sker der egentlig, når bakterierne tager over?`,
     choices: [
       { text: "De spiser de døde alger", nextState: 10 },
