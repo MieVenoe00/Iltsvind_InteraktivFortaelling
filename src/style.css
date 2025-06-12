@@ -6,8 +6,7 @@
  @import url("https://use.typekit.net/ybs0pmt.css");
 
  /*
- font-family: "chaloops",
- sans-serif;
+ font-family: "chaloops",sans-serif;
  font-weight: 400;
  font-style: normal;
 
@@ -199,9 +198,14 @@ main{
 
      color: #4d2500;
 
-     font-family: "ItalienPlateBold";
+     /* font-family: "ItalienPlateBold";
      font-weight: 600;
-     font-size: 3rem;
+     font-size: 3rem; */
+
+
+    font-family: "chaloops", sans-serif;
+        font-weight: 400;
+        font-style: normal;
  }
 
 
@@ -299,8 +303,13 @@ main{
         #h2tekst {
             max-width: 16rem;
 
-            font-family: "ItalienPlateBold";
+            /* font-family: "ItalienPlateBold"; */
             font-size: 1.7rem;
+
+            font-family: "chaloops", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            line-height: 2rem;
         }
  }
 
@@ -396,8 +405,13 @@ main{
     #h2tekst {
         max-width: 21rem;
 
-        font-family:"ItalienPlateBold";
+        /* font-family:"ItalienPlateBold"; */
         font-size: 2.5rem;
+
+        font-family: "chaloops", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 2.9rem;
     }
 }
 
@@ -493,8 +507,13 @@ main{
      #h2tekst {
          max-width: 28rem;
 
-         font-family: "ItalienPlateBold";
+         /* font-family: "ItalienPlateBold"; */
          font-size: 2.8rem;
+
+        font-family: "chaloops", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 3.4rem;
      }
  }
 
@@ -585,8 +604,13 @@ main{
      #h2tekst {
          max-width: 44rem;
 
-         font-family: "ItalienPlateBold";
+         /* font-family: "ItalienPlateBold"; */
          font-size: 4.2rem;
+
+        font-family: "chaloops", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 4.9rem;
      }
  }
 
@@ -620,14 +644,14 @@ main{
 
      .rubrikTekst {
          margin-top: 2.7rem;
-         width: 58%;
+         width: 62%;
          gap: 4rem;
          height: 37rem;
      }
 
      #ptekst,
      #sporgsmaal {
-         width: 86%;
+         width: 89%;
 
 
          margin: 0;
@@ -677,7 +701,12 @@ main{
         
          max-width: 80rem;
 
-         font-family: "ItalienPlateBold";
-         font-size: 9rem;
+         /* font-family: "ItalienPlateBold"; */
+         font-size: 8rem;
+
+        font-family: "chaloops", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 10rem;
      }
  }
