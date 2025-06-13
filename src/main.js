@@ -358,13 +358,6 @@ function showChoices(stateID) {
     });
     console.log(element);
     optionsEl.append(element);
-    /*
-        <div class="btnvalg">
-          <img src="images/skilt-02.svg" id="imgskilt1" alt="skilt">
-          <!-- <h2 id="tekstbtn1">Valgmulighed 1</h2> -->
-          <h2 id="h2tekst">Valgmulighed 1</h2>
-        </div>
-    */
   });
 }
 
